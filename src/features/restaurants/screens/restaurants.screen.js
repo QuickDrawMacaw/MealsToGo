@@ -3,8 +3,8 @@ import { ActivityIndicator, Colors } from "react-native-paper";
 import { FlatList, TouchableOpacity } from "react-native";
 import styled from "styled-components";
 
-import { Spacer } from "../components/spacer/spacer.component";
-import { SafeArea } from "../components/utility/safe-area.component";
+import { Spacer } from "../../../components/spacer/spacer.component";
+import { SafeArea } from "../../../components/utility/safe-area.component";
 
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 
