@@ -1,17 +1,29 @@
 import React from "react";
 
-import { createStackNavigator } from "@react-navigation/stack";
+import {
+  createStackNavigator,
+  TransitionPresets,
+} from "@react-navigation/stack";
 
 import { RestaurantsScreen } from "../../features/restaurants/screens/restaurants.screen";
-
+import { RestaurantDetailScreen } from "../../features/restaurants/screens/restaurant-detail.screen";
 const RestaurantsStack = createStackNavigator();
 
-export const RestaurantsNavigator = () => {
+export const RestaurantsNavigator = (props) => {
   return (
-    <RestaurantsStack.Navigator headerMode="none">
+    <RestaurantsStack.Navigator
+      screenOptions={{
+        headerShown: false,
+        animation: "slide_from_bottom",
+      }}
+    >
       <RestaurantsStack.Screen
         name="Restaurants"
         component={RestaurantsScreen}
+      />
+      <RestaurantsStack.Screen
+        name="RestaurantDetail"
+        component={RestaurantDetailScreen}
       />
     </RestaurantsStack.Navigator>
   );
