@@ -7,7 +7,7 @@ import { theme } from "./src/infrastructure/theme";
 import { LocationContextProvider } from "./src/services/location/location.context";
 import { RestaurantsContextProvider } from "./src/services/restaurants/restaurants.context";
 
-import { Navigation } from "./src/infrastructure/navigation/app.navigator";
+import { Navigation } from "./src/infrastructure/navigation/index";
 
 import {
   useFonts as useOswald,
