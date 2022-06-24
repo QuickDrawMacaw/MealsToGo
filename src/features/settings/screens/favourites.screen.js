@@ -31,7 +31,7 @@ export const FavouritesScreen = ({ navigation }) => {
               }
             >
               <Spacer position="bottom" size="large">
-                <RestaurantInfoCard resturant={item} />
+                <RestaurantInfoCard restaurant={item} />
               </Spacer>
             </TouchableOpacity>
           );
